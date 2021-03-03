@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Gasool</string>
+    <string name="main_title">Digite os valores do álcool e da gasolina em seus respectivos campos.</string>
+    <string name="main_oil">Gasolina</string>
+    <string name="main_alcohol">Álcool</string>
+    <string name="button_calculate">Calcular</string>
 </resources>

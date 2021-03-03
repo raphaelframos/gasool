@@ -6,47 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/image_view_perfil"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/text_view_nome"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="dark_emeralds"
-        android:textColor="#333333"
+        android:padding="16dp"
+        android:text="@string/main_title"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/image_view_perfil"
-        app:layout_constraintStart_toEndOf="@+id/image_view_perfil"
-        app:layout_constraintTop_toTopOf="@+id/image_view_perfil" />
-
-    <ImageView
-        android:id="@+id/image_view_opcoes"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/image_view_perfil"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/image_view_perfil"
-        app:srcCompat="@drawable/ic_action_opcoes"
-        tools:srcCompat="@drawable/ic_action_opcoes" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:layout_marginTop="8dp"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_view_perfil"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_oil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/main_oil"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_oil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_oil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view_oil"
+        app:layout_constraintTop_toTopOf="@+id/text_view_oil" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_alcohol"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_text_alcohol"
+        app:layout_constraintStart_toStartOf="@+id/text_view_oil"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_alcohol" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_alcohol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_oil"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_oil" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_alcohol" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_result"
+        tools:text="@tools:sample/last_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calculate" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
