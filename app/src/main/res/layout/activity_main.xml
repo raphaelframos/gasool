@@ -37,6 +37,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:inputType="numberDecimal"
+        android:hint="@string/symbol"
         app:layout_constraintBottom_toBottomOf="@+id/text_view_oil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text_view_oil"
@@ -58,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
+        android:hint="@string/symbol"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/edit_text_oil"
@@ -66,8 +67,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_calculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButton"
         android:layout_marginTop="32dp"
         android:text="@string/button_calculate"
         app:layout_constraintEnd_toEndOf="parent"

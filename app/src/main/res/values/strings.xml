@@ -4,4 +4,7 @@
     <string name="main_oil">Gasolina</string>
     <string name="main_alcohol">Álcool</string>
     <string name="button_calculate">Calcular</string>
+    <string name="symbol">R$</string>
+    <string name="digite_o_consumo_do_seu_carro_atualmente">Digite o consumo do seu carro atualmente</string>
+    <string name="button_save">Salvar</string>
 </resources>
